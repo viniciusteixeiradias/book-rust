@@ -1,0 +1,15 @@
+pep8.org e type annotations
+
+Documentação Local -> rustup doc
+Se você estiver usando mais de uma palavra no seu nome de arquivo, use um sublinhado para separá-las. Por exemplo, use hello_world.rs em vez de helloworld.rs.
+Se você deseja manter um estilo padrão nos projetos Rust, o rustfmt formatará seu código em um estilo específico.
+Segundo, println! chama uma macro Rust. Se fosse chamada uma função, ela seria inserida como println (sem o!). Discutiremos Rust macros com mais detalhes no Capítulo 19. Por enquanto, você só precisa saber que usar um ! significa que você está chamando uma macro em vez de uma função normal.
+Compilar e Executar são Etapas Separadas
+A última linha, [dependencies], é o início de uma seção para você listar qualquer uma das dependências do seu projeto. Em Rust, pacotes de código são referidos como crates. 
+Em Rust, variáveis são imutáveis por padrão. O exemplo a seguir mostra como usar mut antes do nome da variável para torná-la mutável:
+
+String.new() // JS == String::new() // Rust
+
+O símbolo & indica que o argumento é uma referência, o que permite múltiplas partes do seu código acessar um certo dado sem precisar criar várias cópias dele na memória. Referências são uma característica complexa, e uma das maiores vantagens do Rust é o quão fácil e seguro é usar referências
+Por enquanto, tudo que você precisa saber é que, assim como as variáveis, referências são imutáveis por padrão. Por isso, precisamos escrever &mut palpite, em vez de apenas &palpite, para fazer com que o palpite seja mutável.
+Estamos adicionando a linha extern crate rand ao topo do arquivo para indicar ao Rust que estamos usando uma dependência externa.
